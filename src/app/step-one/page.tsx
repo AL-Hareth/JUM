@@ -8,7 +8,7 @@ interface Tutorial {
 };
 
 export default async function StepOne() {
-  const tutorials = await client.fetch(`*[_type == "tutorial"] {
+  const tutorials = await client.fetch(`*[_type == "tutorial"] | order(_createdAt asc)  {
     title,
     slug { current },
     description,

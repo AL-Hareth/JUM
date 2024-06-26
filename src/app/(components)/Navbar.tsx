@@ -48,6 +48,9 @@ export default function Navbar() {
             <Link href="/step-one">Step One</Link>
           </li>
           <li>
+            <Link href="/quizes">Quizes</Link>
+          </li>
+          <li>
             <Link href="/about">About</Link>
           </li>
         </ul>

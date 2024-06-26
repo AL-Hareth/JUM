@@ -31,13 +31,13 @@ export default async function TutorialPage({ params }: IProps) {
       <div className="my-10">
         <h2 className="text-3xl font-bold py-4">Videos: </h2>
         {tutorial.videos?.map((video: { url: string }) => (
-          <YoutubeIframe link={video.url} className="flex justify-center" />
+          <YoutubeIframe key={video.url} link={video.url} className="flex justify-center" />
         ))}
       </div>
       <div className="my-10">
         <h2 className="text-3xl font-bold py-4">Attached files: </h2>
         {tutorial.files?.map((fileData: { url: string, filename: string }) => (
-          <a href={fileData.url} target="_blank" rel="noreferrer">
+          <a key={fileData.url} href={fileData.url} target="_blank" rel="noreferrer">
             <button className="btn btn-primary my-2">Download {fileData.filename}</button>
           </a>
         ))}
