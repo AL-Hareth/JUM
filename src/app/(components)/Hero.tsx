@@ -6,7 +6,7 @@ export default function Hero() {
       <section className="relative h-screen flex flex-col items-center justify-center text-center text-white ">
         <div className="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
           <video className="min-w-full min-h-full absolute object-cover"
-            src="/Hero.mp4"
+            src="/Hero.webm"
             autoPlay muted loop></video>
         </div>
         <div className="video-content space-y-2 bg-black h-full w-full bg-opacity-50 z-10 flex justify-center items-center">
