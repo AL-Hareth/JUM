@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="min-h-screen bg-gray-900 px-20 py-10">
+    <div className="text-white min-h-screen bg-gray-900 px-20 py-10">
       <h1 className="text-5xl font-bold text-center py-4">About</h1>
       <div className="text-gray-300 text-lg py-3">
         <p className="mb-3 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:me-3 first-letter:float-start">welcome to JUM Jordan USMLE Mentor, where we{"'"}re redefining the journey to Step One for medical students worldwide. We are a passionate team of fellow medical students committed to crafting innovative study aids that include meticulously designed flashcards, boards, concise cheat sheets, engaging videos, and interactive quizzes. Our mission is clear: to transform the daunting Step One experience into an achievable and even enjoyable endeavor.</p>
