@@ -10,7 +10,8 @@ export default function Hero() {
             autoPlay 
             muted 
             loop
-            controls={false}
+            disablePictureInPicture
+            playsInline
           ></video>
         </div>
         <div className="video-content space-y-2 bg-black h-full w-full bg-opacity-50 z-10 flex justify-center items-center">
