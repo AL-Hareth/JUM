@@ -67,7 +67,10 @@ export default function QuestionCard({ questions, answersList }: IProps) {
 	const [isVisibleAnswers, setIsVisibleAnswers] = useState(false);
 
 	const submitAnswers = () => {
-		if (answers.length !== answersList.length || answers.every((answer: number) => !answer)) {
+
+		let checkedAnswers: number[] = answers.filter((answer: number) => !isNaN(answer));
+
+		if (checkedAnswers.length !== answersList.length) {
 			(document.getElementById('notSolvedQuestionsModal') as HTMLDialogElement).showModal();
 			return;
 		}
@@ -86,10 +89,10 @@ export default function QuestionCard({ questions, answersList }: IProps) {
 			<SolveAllQuestionsModal />
 			<SuccessModal />
 			<GoodLuckNextTimeModal />
-			{questions.map((question: any, index: number) => {
+			{questions ? questions.map((question: any, index: number) => {
 				const questionIndex = index;
 				return (
-					<div key={index} className="card bg-blue-950 w-full shadow-xl">
+					<div key={index} className="my-2 card bg-blue-950 w-full shadow-xl">
 						<div className="card-body">
 							<h2 className="card-title mb-2">{question.text}</h2>
 							{question.options.map((option: string, index: number) => (
@@ -107,10 +110,10 @@ export default function QuestionCard({ questions, answersList }: IProps) {
 						</div>
 					</div>
 				);
-			})}
-			<div className="flex">
+			}) : <div className="text-xl font-bold py-4 text-center w-full">No Questions yet!</div>}
+			{questions  && <div className="flex">
 				<button className="btn btn-primary" onClick={submitAnswers}>Submit</button>
-			</div>
+			</div>}
 		</>
 	);
 }

@@ -2,18 +2,14 @@ import { client } from "@/utils/sanity/client";
 import QuizCard from "./(components)/QuizCard";
 
 interface Quiz {
-  title: string;
+  category: string;
   slug: { current: string };
-  questions: {
-    text: string;
-  }[];
 }
 
 export default async function Quizes() {
-  const quizes = await client.fetch(`*[_type == "quizz"] | order(_createdAt asc)  {
-    title,
+  const quizes = await client.fetch(`*[_type == "category"]  {
+    category,
     slug { current },
-    questions[] { text }
   }
 `);
 
@@ -24,9 +20,8 @@ export default async function Quizes() {
         {quizes.map((quiz: Quiz) => (
           <QuizCard
             key={quiz.slug.current}
-            title={quiz.title}
+            title={quiz.category}
             slug={quiz.slug}
-            questions={quiz.questions ? quiz.questions.length : 0}
           />
         ))}
       </div>
