@@ -22,16 +22,19 @@ export default function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <li><a>Item 1</a></li>
-            <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
-              </ul>
-            </li>
-            <li><a>Item 3</a></li>
+            className="menu menu-sm dropdown-content bg-black rounded-box z-[30] mt-3 w-52 p-2 shadow">
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/step-one">Step One</Link>
+          </li>
+          <li>
+            <Link href="/quizes">Quizes</Link>
+          </li>
+          <li>
+            <Link href="/about">About</Link>
+          </li>
           </ul>
         </div>
         <div className="flex items-center">
