@@ -7,7 +7,11 @@ export default function Hero() {
         <div className="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
           <video className="min-w-full min-h-full absolute object-cover"
             src="/Hero.webm"
-            autoPlay muted loop></video>
+            autoPlay 
+            muted 
+            loop
+            controls={false}
+          ></video>
         </div>
         <div className="video-content space-y-2 bg-black h-full w-full bg-opacity-50 z-10 flex justify-center items-center">
           <div className="hero-content text-center z-20">

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function MainPoints() {
   return (
-    <section className="px-20 py-10">
+    <section className="px-5 sm:px-20 py-10">
       <div className="flex md:flex-row flex-col-reverse items-center my-5">
         <div>
           <h1 className="text-3xl font-bold my-5">Eligibility and Registration</h1>

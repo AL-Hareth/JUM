@@ -34,13 +34,13 @@ export default async function TutorialPage({ params }: IProps) {
   }`, { slug: params.slug });
 
   return (
-    <div className="min-h-screen text-center bg-gray-900 px-20 py-10">
+    <div className="min-h-screen text-center bg-gray-900 px-5 sm:px-20 py-10">
       <h1 className="text-5xl font-bold py-4">{tutorial.title}</h1>
       <p className="text-lg my-2">{tutorial.description}</p>
       <div className="my-10 flex flex-col items-center">
         <h2 className="text-3xl font-bold py-4">Videos: </h2>
         {tutorial.videos ? tutorial.videos.map((video: IVideo) => (
-          <div className="my-2 bg-base-200 collapse lg:w-2/3" key={video.url}>
+          <div className="my-2 bg-base-200 collapse w-full lg:w-2/3" key={video.url}>
             <input type="checkbox" className="peer" />
             <div
               className="flex justify-between collapse-title bg-gray-600 text-primary-content peer-checked:bg-slate-700 peer-checked:text-secondary-content">

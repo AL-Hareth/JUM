@@ -15,7 +15,7 @@ export default function Steps() {
           </svg>
         </div>
         <div className="timeline-start mb-10 md:text-end">
-          <time className="font-mono italic">First Step</time>
+          <time className="font-mono ">First Step</time>
           <div className="text-lg font-black">Focuses on foundational sciences and tests the understanding of basic medical concepts learned in the first two years of medical school.</div>
         </div>
         <hr />
@@ -35,7 +35,7 @@ export default function Steps() {
           </svg>
         </div>
         <div className="text-left flex flex-col justify-start ml-2 timeline-end mb-10">
-          <time className="font-mono italic mt-1">Second Step</time>
+          <time className="font-mono mt-1">Second Step</time>
           <div className="text-lg font-black">Clinical Knowledge (CK)</div>
           Assesses clinical knowledge and application of medical principles in patient care, including diagnosis and management.
         </div>
@@ -56,7 +56,7 @@ export default function Steps() {
           </svg>
         </div>
         <div className="timeline-start mb-10 md:text-end">
-          <time className="font-mono italic">Third Step</time>
+          <time className="font-mono ">Third Step</time>
           <div className="text-lg font-black">Clinical Skills (CS)</div>
           Evaluates clinical skills through simulated patient interactions, focusing on communication and physical examination.
         </div>
@@ -77,7 +77,7 @@ export default function Steps() {
           </svg>
         </div>
         <div className="text-left flex flex-col justify-start ml-2 timeline-end mb-10">
-          <time className="font-mono italic mt-1">Fourth Step</time>
+          <time className="font-mono mt-1">Fourth Step</time>
           <div className="text-lg font-black">Tests the ability to apply medical knowledge and understanding of biomedical and clinical science in patient management scenarios.</div>
         </div>
       </li>

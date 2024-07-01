@@ -4,7 +4,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 export default function Footer() {
   return (
-    <footer className="footer bg-neutral text-neutral-content py-10 px-20">
+    <footer className="footer bg-neutral text-neutral-content py-10 px-5 sm:px-20">
       <aside>
         <Image src="/logo.png" alt="Logo" width={90} height={90} />
         <p>

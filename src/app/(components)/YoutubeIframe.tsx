@@ -4,7 +4,7 @@ export default function YoutubeIframe({ link, className }: { link: string, class
   return (
     <div className={className}>
       <iframe
-        width="560"
+        className="w-full"
         height="315"
         src={videoLinkConverter(link)}
         title="YouTube video player"
