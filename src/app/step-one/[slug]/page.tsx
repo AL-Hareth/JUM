@@ -18,6 +18,8 @@ interface IVideo {
   files: IFile[]
 }
 
+export const revalidate = 0;
+
 export default async function TutorialPage({ params }: IProps) {
   const tutorial = await client.fetch(`*[_type == 'tutorial' && slug.current == $slug][0] {
     title,

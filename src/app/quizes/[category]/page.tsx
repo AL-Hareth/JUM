@@ -2,6 +2,8 @@ import { client } from "@/utils/sanity/client";
 import QuestionCard from "./(compoents)/QuestionCard";
 import Link from "next/link";
 
+export const revalidate = 0;
+
 export default async function Quiz({ params }: { params: { category: string } }) {
   const categories = (await client.fetch(`*[_type == 'category' && slug.current == $category][0] {
     category,

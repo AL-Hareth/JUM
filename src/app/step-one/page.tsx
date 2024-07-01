@@ -7,6 +7,8 @@ interface Tutorial {
   description: string;
 };
 
+export const revalidate = 0;
+
 export default async function StepOne() {
   const tutorials = await client.fetch(`*[_type == "tutorial"] | order(_createdAt asc)  {
     title,

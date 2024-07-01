@@ -6,6 +6,8 @@ interface Quiz {
   slug: { current: string };
 }
 
+export const revalidate = 0;
+
 export default async function Quizes() {
   const quizes = await client.fetch(`*[_type == "category"]  {
     category,
