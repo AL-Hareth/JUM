@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function MainPoints() {
   return (
     <section className="px-20 py-10">
-      <div className="flex my-5">
+      <div className="flex md:flex-row flex-col-reverse items-center my-5">
         <div>
           <h1 className="text-3xl font-bold my-5">Eligibility and Registration</h1>
           <p className="text-xl">
@@ -18,7 +18,7 @@ export default function MainPoints() {
           height={300}
         />
       </div>
-      <div className="flex my-5">
+      <div className="flex md:flex-row flex-col items-center my-5">
         <Image
           src="/SecondParagraph.jpeg"
           className="rounded-lg border p-2 border-amber-700 mr-4"
@@ -33,7 +33,7 @@ export default function MainPoints() {
           </p>
         </div>
       </div>
-      <div className="flex my-5">
+      <div className="flex md:flex-row flex-col-reverse items-center my-5">
         <div>
           <h1 className="text-3xl font-bold my-5">Preparation and Resources</h1>
           <p className="text-xl">
