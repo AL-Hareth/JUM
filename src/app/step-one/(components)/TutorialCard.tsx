@@ -8,7 +8,7 @@ interface IProps {
 
 export default function TutorialCard({ title, description, slug }: IProps) {
   return (
-    <div className="card bg-black h-full w-full shadow-xl">
+    <div className="text-white card bg-black h-full w-full shadow-xl">
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
         <p>{description}</p>

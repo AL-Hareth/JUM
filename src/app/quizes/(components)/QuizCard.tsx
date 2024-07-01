@@ -7,7 +7,7 @@ interface IProps {
 
 export default function QuizCard({ title, slug }: IProps) {
   return (
-    <div className="card bg-blue-950 w-full shadow-xl">
+    <div className="text-white card bg-blue-950 w-full shadow-xl">
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
         <div className="card-actions justify-end">
